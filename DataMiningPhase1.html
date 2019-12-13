@@ -85,6 +85,15 @@ In the example of amusing, amusement, and amused above, the stem would be amus.<
 <h4>Code:
 porter = nltk.PorterStemmer()
 stem = [porter.stem(i) for i in tokens]</h4>
+<h2 style="color: #2e6c80;">Apply Lemmatization(WordNetLemmatizer):</h2>
+<p>Lemmatization is the process of grouping the terms having same meaning. So if you search for the particular term 
+then lemmatization will provide you the the result which will be having words with the similar meaning. </p>
+<h4>Code:
+from nltk.stem import WordNetLemmatizer 
+lemmatizer = WordNetLemmatizer() 
+lemmatize = [porter.lemmatize(i) for i in tokens]</h4>
+<h2 style="color: #2e6c80;">Source Code :</h2>
+<a href="https://github.com/prajkta1717/textSearchEngine"></a>
 <h2 style="color: #2e6c80;">Challenges faced :</h2>
 <li>I started with TF calculation for my dataset. Since my Dataset is quite bigger, my code took time to calculate the TF of every word
 of the dataset. While calculating IDF, It took too much time to show the result. To overcome this problem, I did research and found few solutions.
